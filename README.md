@@ -1,1 +1,1 @@
-# FreeCodeCamp-Edits
+# FreeCodeCamp-Lessons
