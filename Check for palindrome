@@ -1,0 +1,12 @@
+function palindrome(str) {
+  var newStr = str.replace(/[\W_]/g, '');
+  var lowStr = newStr.toLowerCase();
+  var splitStr =  lowStr.split('');
+  var reverseStr = splitStr.reverse().join('');
+  if(reverseStr === str.replace(/[\W_]/g, '').toLowerCase()) return true;
+  else return false;
+}
+
+
+
+palindrome("Malayalam");
