@@ -1,0 +1,26 @@
+
+function findLongestWord(str) {
+  var longestLength = 0;
+  var wordLength = 0;
+  var strArray = str.split('');
+  for(var i=0 ; i<strArray.length; i++){
+    if(strArray[i] !== ' '){
+      wordLength += 1;
+    }
+    else{
+      if(wordLength > longestLength){
+        longestLength = wordLength;
+      }
+      wordLength = 0;
+    }
+    
+    if(i === strArray.length -1){
+      if(wordLength > longestLength){
+        longestLength = wordLength;
+      }
+    }
+  }
+  return longestLength;
+}
+
+findLongestWord("What if we try a super-long word such as otorhinolaryngology");
