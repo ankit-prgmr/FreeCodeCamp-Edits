@@ -1,0 +1,14 @@
+$(document).ready(function() {
+
+    $("#getMessage").on("click", function() {
+      $.getJSON("/json/cats.json", function(json) {
+
+        // Only change code below this line.
+        
+        $(".message").html(JSON.stringify(json));
+        
+        // Only change code above this line.
+
+      });
+    });
+  });
